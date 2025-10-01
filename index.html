@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дмитрий Дейнеко — Кандидат в президенты школы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://www.goat1000.com/tagcanvas.min.js" type="text/javascript"></script>
+</head>
+<body class="light-theme">
+
+    <div class="top-right-controls">
+        <button id="socials-toggle" class="control-button" data-modal-target="#modal-socials">💬</button>
+        <button id="theme-toggle" class="control-button">🌙</button>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>ДМИТРИЙ ДЕЙНЕКО</h1>
+                <p class="subtitle">
+                    <span id="typing-effect"></span>
+                </p>
+                <a href="#program" class="cta-button">Моя программа</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://i.ibb.co/L84tYy3/dima-placeholder.png" alt="Дмитрий Дейнеко">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <h2>Я здесь, чтобы слушать и действовать</h2>
+            <p>"Дима слышит каждого" — это не просто слова. Это мой главный принцип. Моя цель — сделать нашу школу местом, куда хочется приходить каждый день.</p>
+        </section>
+
+        <section class="video-section">
+            <h2>Моё видеообращение</h2>
+            <div class="video-container">
+                <iframe src="https://rutube.ru/play/embed/325a52eb4991db8ef857160bad229fde" frameborder="0" allow="clipboard-write; autoplay" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="countdown-section">
+            <h2>До выборов осталось:</h2>
+            <div id="countdown" class="countdown">
+                <div class="countdown-item"><span id="days">00</span><p>Дней</p></div>
+                <div class="countdown-item"><span id="hours">00</span><p>Часов</p></div>
+                <div class="countdown-item"><span id="minutes">00</span><p>Минут</p></div>
+                <div class="countdown-item"><span id="seconds">00</span><p>Секунд</p></div>
+            </div>
+        </section>
+        
+        <section id="program" class="program-section">
+            <h2>Моя программа</h2>
+            <div class="initiatives-grid">
+                <div class="card" data-modal-target="#modal-tech"><h3>🚀 Технологии и медиа</h3><p>VR-уроки, школьный подкаст, digital-карта школы. Узнай больше...</p></div>
+                <div class="card" data-modal-target="#modal-culture"><h3>🎨 Культура и творчество</h3><p>Арт-проекты, музыкальные вечера, клуб медиа. Узнай больше...</p></div>
+                <div class="card" data-modal-target="#modal-sport"><h3>⚽ Спорт и здоровье</h3><p>Мультиспорт-зона, эко-фитнес, школьная лига. Узнай больше...</p></div>
+                <div class="card" data-modal-target="#modal-dev"><h3>🧠 Учёба и развитие</h3><p>Менторская программа, стартап-клуб, мастер-классы. Узнай больше...</p></div>
+            </div>
+        </section>
+        
+        <section class="word-cloud-section">
+            <h2>Наши главные ценности</h2>
+            <div id="tagcloud-container">
+                <canvas width="600" height="600" id="tagcanvas"></canvas>
+            </div>
+            <div id="tags">
+                <ul>
+                    <li><a href="#program">Инновации</a></li> <li><a href="#program">Творчество</a></li>
+                    <li><a href="#program">Спорт</a></li> <li><a href="#program">Развитие</a></li>
+                    <li><a href="#team-section">Команда</a></li> <li><a href="#about">Дружба</a></li>
+                    <li><a href="#program">Экология</a></li> <li><a href="#about">Уважение</a></li>
+                    <li><a href="#program">Будущее</a></li> <li><a href="#about">Честность</a></li>
+                    <li><a href="#program">Диалог</a></li> <li><a href="#program">Безопасность</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>Моя команда</h2>
+            <div class="team-plaques">
+                <div class="team-plaque" data-modal-target="#modal-maria"><h3>Мария</h3><p>Арт-директор</p></div>
+                <div class="team-plaque" data-modal-target="#modal-ivan"><h3>Иван</h3><p>Спортивный координатор</p></div>
+                <div class="team-plaque" data-modal-target="#modal-alex"><h3>Алексей</h3><p>Технический гуру</p></div>
+            </div>
+        </section>
+        
+        <section class="myth-busters-section">
+            <h2>Разрушители мифов</h2>
+            <div class="myth-grid">
+                <div class="myth" data-modal-target="#modal-myth1"><h3>🤔 Миф №1</h3><p>"Это всё просто красивые обещания, ничего не изменится". Подробнее...</p></div>
+                <div class="myth" data-modal-target="#modal-myth2"><h3>💰 Миф №2</h3><p>"На VR и прочие крутые штуки у школы нет денег". Подробнее...</p></div>
+                <div class="myth" data-modal-target="#modal-myth3"><h3>📋 Миф №3</h3><p>"Нам всё равно не разрешит администрация". Подробнее...</p></div>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <h2>Календарь кампании</h2>
+            <div class="events-list">
+                <div class="event-item" data-modal-target="#modal-event1"><div class="event-date"><span>28</span>СЕН</div><div class="event-details"><h3>Встреча в главном холле</h3><p>Отвечаю на ваши вопросы на большой перемене. Кликни, чтобы узнать детали.</p></div></div>
+                <div class="event-item upcoming" data-modal-target="#modal-event2"><div class="event-date"><span>05</span>ОКТ</div><div class="event-details"><h3>Школьные дебаты</h3><p>Главное событие кампании! Актовый зал, 14:00. Кликни, чтобы узнать детали.</p></div></div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="faq-container">
+                <div class="faq-item"><button class="faq-question">Как ты будешь совмещать учёбу и пост президента?</button><div class="faq-answer"><p>Эффективное распределение времени и командная работа — ключ ко всему. Президентство — это не только ответственность, но и отличная практика в тайм-менеджменте. У меня есть команда, и мы будем распределять задачи.</p></div></div>
+                <div class="faq-item"><button class="faq-question">Что будет, если какая-то идея не получится?</button><div class="faq-answer"><p>Не все может получиться с первого раза. Мой принцип — быть честным. Если мы столкнемся с трудностями, мы открыто об этом сообщим и вместе с учениками будем искать альтернативные пути. Главное — не стоять на месте.</p></div></div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <h2>Готов изменить школу вместе со мной?</h2>
+            <p>Твой голос решает всё. Поддержи мою кандидатуру и расскажи друзьям!</p>
+            <div class="cta-buttons-container"><button id="share-button" class="cta-main-button">📢 Рассказать друзьям</button></div>
+        </section>
+    </main>
+    
+    <div class="marquee"><div class="marquee-content"><span>ИННОВАЦИИ • ТВОРЧЕСТВО • СПОРТ • РАЗВИТИЕ • ВМЕСТЕ</span><span>ИННОВАЦИИ • ТВОРЧЕСТВО • СПОРТ • РАЗВИТИЕ • ВМЕСТЕ</span></div></div>
+    <footer class="footer"><p>Сайт кандидата в президенты школы Дмитрия Дейнеко, 9 "А" класс.</p></footer>
+    <a id="scrollTopButton" class="scroll-top-button">↑</a>
+    
+    <div id="overlay"></div>
+    <div class="modal" id="modal-tech"> <div class="modal-header"><h2>🚀 Технологии и медиа</h2><button class="close-button">&times;</button></div><div class="modal-body"><p>Здесь будет подробное описание технологических инициатив...</p></div></div>
+    <div class="modal" id="modal-culture"> <div class="modal-header"><h2>🎨 Культура и творчество</h2><button class="close-button">&times;</button></div><div class="modal-body"><p>Здесь будет подробное описание творческих инициатив...</p></div></div>
+    <div class="modal" id="modal-sport"> <div class="modal-header"><h2>⚽ Спорт и здоровье</h2><button class="close-button">&times;</button></div><div class="modal-body"><p>Здесь будет подробное описание спортивных инициатив...</p></div></div>
+    <div class="modal" id="modal-dev"> <div class="modal-header"><h2>🧠 Учёба и развитие</h2><button class="close-button">&times;</button></div><div class="modal-body"><p>Здесь будет подробное описание учебных инициатив...</p></div></div>
+    <div class="modal team-modal" id="modal-maria"><div class="modal-body"><img src="https://i.pravatar.cc/200?u=maria" alt="Фото Марии"><div class="team-modal-content"><h2>Мария <button class="close-button">&times;</button></h2><h3>Арт-директор</h3><p>Мария будет курировать все творческие инициативы.</p></div></div></div>
+    <div class="modal team-modal" id="modal-ivan"><div class="modal-body"><img src="https://i.pravatar.cc/200?u=ivan" alt="Фото Ивана"><div class="team-modal-content"><h2>Иван <button class="close-button">&times;</button></h2><h3>Спортивный координатор</h3><p>Иван возьмет на себя организацию школьной лиги.</p></div></div></div>
+    <div class="modal team-modal" id="modal-alex"><div class="modal-body"><img src="https://i.pravatar.cc/200?u=alex" alt="Фото Алексея"><div class="team-modal-content"><h2>Алексей <button class="close-button">&times;</button></h2><h3>Технический гуру</h3><p>Алексей поможет нам с запуском школьного подкаста.</p></div></div></div>
+    <div class="modal" id="modal-myth1"> <div class="modal-header"><h2>Миф: "Это всё обещания"</h2><button class="close-button">&times;</button></div><div class="modal-body"><strong>✅ Правда:</strong> Каждая моя инициатива — это не мечта, а проект с конкретными шагами.</div></div>
+    <div class="modal" id="modal-myth2"> <div class="modal-header"><h2>Миф: "Нет денег"</h2><button class="close-button">&times;</button></div><div class="modal-body"><strong>✅ Правда:</strong> Многие инициативы не требуют больших финансовых вложений.</div></div>
+    <div class="modal" id="modal-myth3"> <div class="modal-header"><h2>Миф: "Не разрешит администрация"</h2><button class="close-button">&times;</button></div><div class="modal-body"><strong>✅ Правда:</strong> Я уже провел предварительные консультации с завучем.</div></div>
+    <div class="modal" id="modal-event1"> <div class="modal-header"><h2>Встреча в главном холле</h2><button class="close-button">&times;</button></div><div class="modal-body"><p><strong>Когда:</strong> 28 сентября, большая перемена.</p></div></div>
+    <div class="modal" id="modal-event2"> <div class="modal-header"><h2>Школьные дебаты</h2><button class="close-button">&times;</button></div><div class="modal-body"><p><strong>Когда:</strong> 5 октября, 14:00.</p></div></div>
+    <div class="modal" id="modal-socials"><div class="modal-header"><h2>Мои контакты</h2><button class="close-button">&times;</button></div><div class="modal-body socials-modal-body"><a href="#" class="social-link">💬 Мой VK</a><a href="#" class="social-link">🏫 VK нашей школы</a><a href="#" class="social-link">✈️ Мой Telegram</a></div></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
