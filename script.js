@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Логика для эффекта печатания ---
     const typingElement = document.getElementById('typing-effect');
     if(typingElement) {
-        const phrases = ["...слушает каждого.", "...действует смело.", "...создаёт будущее.", "Дмитрий Дейнеко."];
+        const phrases = ["...слушает каждого.", "...действует смело.", "...создаёт будущее."];
         let phraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;

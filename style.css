@@ -28,11 +28,18 @@ h1, h2, h3, p, div, header, section, footer {
 .hero-text .subtitle { font-size: 1.5rem; margin-bottom: 2rem; opacity: 0.8; min-height: 2.2rem; }
 .cta-button { display: inline-block; padding: 1rem 2rem; background: var(--gradient); color: #fff; text-decoration: none; border-radius: 50px; font-weight: 700; transition: transform 0.3s, box-shadow 0.3s; }
 .cta-button:hover { transform: translateY(-5px); box-shadow: 0 10px 20px var(--shadow-color); }
-.hero-image img { max-width: 350px; border-radius: 50%; border: 5px solid; border-image: var(--gradient) 1; }
+/* --- ИЗМЕНЁННЫЙ СТИЛЬ --- */
+.hero-image img { 
+    max-width: 500px; /* Увеличиваем размер изображения */
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    height: auto;
+}
 
 /* --- Стили для эффекта печатания (ИСПРАВЛЕНО) --- */
 #typing-effect {
-    border-right: 3px solid var(--text-color); /* Имитация курсора */
+    border-right: 3px solid var(--text-color);
     animation: blink 0.7s infinite;
 }
 @keyframes blink {
@@ -56,9 +63,9 @@ h2 { font-size: 2.5rem; font-weight: 900; margin-bottom: 2rem; background: var(-
 }
 .form-container iframe {
     width: 100%;
-    min-height: 480px; /* Можете подобрать высоту */
+    min-height: 480px;
     border-radius: 10px;
-    border: none; /* Убираем стандартную рамку iframe */
+    border: none;
 }
 /* === КОНЕЦ НОВЫХ СТИЛЕЙ === */
 
@@ -101,7 +108,7 @@ h2 { font-size: 2.5rem; font-weight: 900; margin-bottom: 2rem; background: var(-
 .event-details h3 { font-weight: 700; margin-bottom: 0.3rem; }
 .event-item.upcoming .event-date { background: var(--gradient); color: white; }
 
-.faq-container { max-width: 800px; margin: 2rem auto; text-align: left; }
+.faq-section { max-width: 800px; margin: 2rem auto; text-align: left; }
 .faq-item { border-bottom: 1px solid var(--border-color); }
 .faq-question { width: 100%; background: none; border: none; text-align: left; padding: 1.5rem 1rem; font-size: 1.2rem; font-weight: 600; cursor: pointer; color: var(--text-color); position: relative; padding-right: 2rem; }
 .faq-question::after { content: '+'; position: absolute; right: 1rem; font-size: 1.5rem; transition: transform 0.3s; }
@@ -152,7 +159,7 @@ h2 { font-size: 2.5rem; font-weight: 900; margin-bottom: 2rem; background: var(-
 
 @media (max-width: 768px) {
     main {
-        padding: 2rem 1rem; /* Уменьшаем отступы для мобильных */
+        padding: 2rem 1rem;
     }
 
     .top-right-controls {
@@ -174,41 +181,41 @@ h2 { font-size: 2.5rem; font-weight: 900; margin-bottom: 2rem; background: var(-
     }
 
     .hero-text h1 {
-        font-size: 2.8rem; /* Уменьшаем заголовок */
+        font-size: 2.8rem;
     }
     
     .hero-text .subtitle {
-        font-size: 1.2rem; /* Уменьшаем подзаголовок */
-        min-height: 3.6rem; /* Даем больше места для печатающегося текста */
+        font-size: 1.2rem;
+        min-height: 3.6rem;
     }
     
     .hero-image img {
-        max-width: 250px; /* Уменьшаем фото кандидата */
+        max-width: 350px; /* Увеличиваем фото кандидата на мобильных */
     }
 
     h2 {
-        font-size: 2rem; /* Уменьшаем заголовки секций */
+        font-size: 2rem;
     }
     
     .card, .team-plaque, .myth {
-        flex-basis: 100%; /* Заставляем карточки занимать всю ширину */
+        flex-basis: 100%;
     }
     
     .countdown {
-        gap: 0.5rem; /* Уменьшаем расстояние между элементами таймера */
+        gap: 0.5rem;
     }
     
     .countdown-item {
-        min-width: 70px; /* Уменьшаем минимальную ширину элемента таймера */
+        min-width: 70px;
         padding: 0.5rem;
     }
     
     .countdown-item span {
-        font-size: 2rem; /* Уменьшаем цифры таймера */
+        font-size: 2rem;
     }
     
     .event-item {
-        flex-direction: column; /* Ставим дату над описанием события */
+        flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
     }
@@ -218,15 +225,15 @@ h2 { font-size: 2.5rem; font-weight: 900; margin-bottom: 2rem; background: var(-
     }
     
     .modal {
-        width: 90%; /* Модальные окна занимают больше места на экране */
-        max-height: 85vh; /* Ограничиваем высоту, чтобы окно не выходило за пределы экрана */
+        width: 90%;
+        max-height: 85vh;
         display: flex;
         flex-direction: column;
     }
 
     .modal-body {
-        overflow-y: auto; /* Добавляем прокрутку для содержимого, если оно не помещается */
-        -webkit-overflow-scrolling: touch; /* Плавная прокрутка на iOS */
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .team-modal .modal-body {
